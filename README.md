@@ -2,7 +2,6 @@
 
 ## Copyright Information
 This calculator is protected by copyright. All rights reserved.
-© 2024 by adellabr.
 
 ## Installation
 To use this calculator, the user needs to install the following utilities:
