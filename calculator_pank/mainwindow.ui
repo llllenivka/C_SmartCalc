@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1027</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(223, 156, 255);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane {
+    background-color:  rgb(255, 4, 0);
+
+}
+
+QTabBar::tab {
+    background-color: rgb(255, 241, 184);
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 5px;
+	color: rgb(161, 143, 45);
+}
+
+QTabBar::tab:selected{
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string> calculator </string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_acos">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>270</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>acos</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="customPlot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>471</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_show_graph">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>440</y>
+        <width>206</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>---   show graph   ---</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>340</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_mod">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>410</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>mod</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ln">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>410</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>ln</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_sqrt">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>sqrt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>340</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_plus">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>270</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_close_bracket">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>130</y>
+        <width>64</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_cos">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>cos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_asin">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>asin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_dot">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>410</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_0">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>410</y>
+        <width>134</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_equal">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>340</y>
+        <width>65</width>
+        <height>135</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_pow">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>340</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>^</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_mul">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>*</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_open_bracket">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>64</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>(</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_div">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>270</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_atan">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>340</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>atan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>340</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>270</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_sin">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>sin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_x">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>130</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>270</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_AC">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>130</y>
+        <width>135</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>AC</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_minus">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>200</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_log">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>410</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>log</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>270</y>
+        <width>65</width>
+        <height>64</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_tan">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>340</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);
+}
+
+QPushButton:hover{
+	background-color: #a1de9b;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.529, x2:0.995025, y2:0.0230455, stop:0 rgba(26, 137, 62, 255), stop:1 rgba(201, 255, 180, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>tan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_back">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>130</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	
+}
+
+QPushButton:hover{
+	background-color:rgb(148, 106, 219);
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:0.9801, y1:0.585227, x2:0.9801, y2:0, stop:0 rgba(112, 75, 180, 255), stop:1 rgba(187, 150, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="result_show">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>485</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 24pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>     credit     </string>
+     </attribute>
+     <widget class="QComboBox" name="comboBox_type">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>200</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 24pt &quot;Apple SD Gothic Neo&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_total_credit_amount">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>50</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);</string>
+      </property>
+      <property name="text">
+       <string>total credit amount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_term">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>100</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);</string>
+      </property>
+      <property name="text">
+       <string>term (months)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_interest_rate">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>150</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);</string>
+      </property>
+      <property name="text">
+       <string>interest rate (%)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_type">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>200</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(186, 255, 179);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(51, 107, 38);</string>
+      </property>
+      <property name="text">
+       <string>type</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="input_total_credit_amount">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>50</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox{
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 24pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="maximum">
+       <double>100000000000000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="input_interes_rate">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>150</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox{
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 24pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="maximum">
+       <double>100000000000000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="input_term">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>100</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox{
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 24pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="maximum">
+       <number>1000000000</number>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table_credit">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>10</y>
+        <width>500</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: rgb(51, 107, 38);
+	background-color: white;
+	font: 700 12pt &quot;Apple SD Gothic Neo&quot;;
+</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>monthly payment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>principal payment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>interest payment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>balance owed</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="text_MP">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>310</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;</string>
+      </property>
+      <property name="text">
+       <string>monthly payment</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="text_OON">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>370</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;</string>
+      </property>
+      <property name="text">
+       <string>overpayment on credit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="text_TP">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>430</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(169, 113, 255);
+	color: rgb(238, 183, 255);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;</string>
+      </property>
+      <property name="text">
+       <string>total payment</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="output_monthly_payment">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>310</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="output_total_payment">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>430</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="output_overpayment_on_credit">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>370</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: rgb(42, 41, 42);
+	background-color: rgb(100, 99, 101);
+	border-radius: 20px;
+	border: 1px solid gray;
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+}
+
+background-color : white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_show_credit">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>260</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}
+
+QPushButton:hover{
+	background-color:#ded2a0;
+}
+
+QPushButton:pressed {
+	background-color:qlineargradient(spread:pad, x1:1, y1:0.631, x2:1, y2:0, stop:0 rgba(186, 168, 0, 255), stop:1 rgba(255, 243, 169, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>------        calculate        ------</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="status_credit">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color: rgb(255, 241, 184);
+	font: 700 18pt &quot;Apple SD Gothic Neo&quot;;
+	border: 1px solid rgb(128, 62, 120);
+	border-bottom: 2px solid rgb(128, 62, 120);
+	border-right: 2px solid rgb(128, 62, 120);
+	border-radius: 15px;
+	color: rgb(161, 143, 45);
+}</string>
+      </property>
+      <property name="text">
+       <string>status:  enter the data</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>../qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
